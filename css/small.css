@@ -1,0 +1,125 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f9; /* Soft off-white background */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(0deg, #3a3a72, #00a8cc); /* Cool gradient with blue tones */
+    color: #fff;
+    padding: 1rem 2%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+nav {
+    background-color: #005792; /* Deep blue for contrast */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav button {
+    flex-basis: 48%;
+    margin: 0.5rem 1%;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #8ecae6, #219ebc); /* Gradient with light and deep blue */
+    color: #fff; /* White text for contrast */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+nav button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(0deg, #219ebc, #023047); /* Darker blue gradient on hover */
+}
+
+#viewer {
+    margin: 1rem 2%;
+    border-radius: 11px;
+    border: 1px solid #ddd; /* Subtle border */
+    background-color: #fff; /* White background for content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#viewer img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ddd; /* Separation between image and content */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#viewer h2 {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #023047; /* Dark blue for heading background */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.5rem;
+}
+
+#viewer ul {
+    margin: 1rem 2%;
+    padding: 0;
+    color: #219ebc; /* Blue for list items */
+    list-style: disc;
+}
+
+#viewer li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+#viewer p {
+    padding: 1rem 2%;
+    line-height: 1.5; /* Improved readability */
+    color: #555; /* Slightly muted text color */
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(0deg, #3a3a72, #00a8cc); /* Consistent with header */
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for separation */
+}
+
+footer a {
+    color: #ffcb77; /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
